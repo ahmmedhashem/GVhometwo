@@ -1,0 +1,192 @@
+@import "../../../../styles.scss";
+
+.footer{
+    background: #100024;
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 29px 0 0 0;
+      background: linear-gradient(84.57deg, #801C75 -143.28%, #100024 99.34%);
+      box-shadow: 0px 108px 101px -47px rgba(0, 0, 0, 0.1);
+    }
+    .container{
+      @media (min-width: $width1) and (max-width: $width2) {
+       padding: 0;
+      }
+    }
+    .shapetwo{
+        position: absolute;
+        width: 82%;
+        height: 155%;
+        left: -675px;
+        bottom: 0;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(248, 58, 205, 0.5) 0%, rgba(26, 25, 29, 0) 100%);
+    }
+    .content{
+      @media (min-width: $width1) and (max-width: $width2) {
+        margin: 10px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+       }
+       img{
+         display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: inline-block;
+          margin-bottom: 30px;
+         }
+       }
+        h3{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 296.69%;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 18px;
+             }
+        }
+        ul{
+            li{
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 50px;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  font-size: 12px;
+                  line-height: 34px;
+                 }
+                a{
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 50px;
+                    text-decoration: none;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                      font-size: 12px;
+                      line-height: 34px;
+                     }
+                }
+            }
+        }
+        .down{
+            margin-top: 85px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              margin-top: 10px;
+             }
+        }
+    }
+    .news_letter{
+        width: 100%;
+        background: rgba(128, 28, 117, 0.2);
+        margin-top: 32px;
+        padding: 20px 25px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          background: unset;
+          margin-top: 0px;
+          padding: 0px 20px;
+         }
+        h3{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 310.69%;
+            letter-spacing: 2px;
+              @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 18px;
+             }
+        }
+        p{
+          display: none;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          margin-left: 0;
+          @media (min-width: $width1) and (max-width: $width2) {
+            display: inline-block;
+           }
+        }
+        .send_email{
+            position: relative;
+            @media (min-width: $width1) and (max-width: $width2) {
+              margin-bottom: 0;
+           }
+            margin-bottom: 30px;
+            input{
+                background-color: unset;
+                border: none;
+                border-bottom: 1px solid $textColor;
+                line-height: 40px;
+                width: 100%;
+                &::placeholder{
+                  @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 12px;
+                 }
+
+                }
+            }
+            button{
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                background-color: unset;
+                border: none;
+            }
+        }
+        br{
+          @media (min-width: $width1) and (max-width: $width2) {
+            display: none;
+         }
+        }
+        .shape{
+            position: relative;
+            top: 12px;
+            float: left;
+            margin-right: 10px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              top: 16px;
+           }
+            svg.aaa{
+                position: absolute;
+                top: 0;
+                left: 0;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  width: 16px;
+                  height: 16px;
+               }
+            }
+            svg.bbb{
+                position: absolute;
+                top: 7px;
+                left: 6px;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  top: 4px;
+                  left: 4px;
+                  width: 9px;
+                  height: 9px;
+               }
+            }
+        }
+        .agree{
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 50px;
+            margin-left: 32px;
+            display: block;
+            @media (min-width: $width1) and (max-width: $width2) {
+             font-size: 12px;
+             margin-left: 24px;
+          }
+        }
+    }
+    .copyright{
+      display: none;
+      @media (min-width: $width1) and (max-width: $width2) {
+       display: block;
+    }
+      p{
+          opacity: 0.8;
+          font-size: 16px;
+          line-height: 66px;
+          @media (min-width: $width1) and (max-width: $width2) {
+              background: linear-gradient(270deg, #131313 -40.25%, #686868 164.47%);
+              margin: 0;
+              font-size: 12px;
+          }
+      }
+  }
+}

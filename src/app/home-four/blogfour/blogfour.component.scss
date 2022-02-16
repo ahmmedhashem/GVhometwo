@@ -1,0 +1,33 @@
+@import "../../HomeThree/main-home-three/blog/blog.component.scss";
+@import "../../../styles.scss";
+
+.blog{
+  @media (min-width: $width1) and (max-width: $width2) {
+    margin-top: -285px;
+   }
+    .heading{
+        margin-bottom: 50px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          margin-bottom: 25px;
+         }
+        h3{
+            color: #373737;
+        }
+        p{
+            color: #373737;
+        }
+    }
+    .slider-cont-four {
+        position: relative;
+        width: 138%;
+        left: -38%;
+        top: 106px;
+        background-color: unset;
+        text-align: left;
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 100%;
+          left: 0%;
+          top: -54px;
+        }
+    }
+}

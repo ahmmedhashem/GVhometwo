@@ -1,0 +1,199 @@
+@import "../../../../styles.scss";
+
+
+
+.slider-cont{
+    background: #003827;
+    position: relative;
+    padding-bottom: 134px;
+    overflow: hidden;
+    @media (min-width: $width1) and (max-width: $width2) {
+        padding-bottom: 0px;
+        height: 635px;
+    }
+    .ellipse-one{
+        position: absolute;
+        top: -1102px;
+        left: -626px;
+        width: 86%;
+        height: 166%;
+        background: radial-gradient(38.86% 38.86% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+        animation: fadeInLeft;
+        animation-duration: 5s;
+    }
+    .ellipse-two{
+        position: absolute;
+        top: 0%;
+        right: -1006px;
+        width: 98%;
+        height: 100%;
+        background: radial-gradient(38.86% 38.86% at 50% 50%, #00E384 0%, rgba(26, 25, 29, 0) 100%);
+        animation: fadeInRight;
+        animation-duration: 5s;
+    }
+    .container{
+        @media (min-width: $width1) and (max-width: $width2) {
+            padding: 0;
+        }
+        .content{
+            padding: 100px 0;
+            @media (min-width: $width1) and (max-width: $width2) {
+                padding: 42px 0 0;
+            }
+            .row{
+                @media (min-width: $width1) and (max-width: $width2) {
+                    flex-direction: column-reverse;
+                }
+                .theimgg{
+                    width: 100%;
+                    mix-blend-mode: screen;
+                    border-radius: 122px;
+                    animation: slideInLeft;
+                    animation-duration: 3s;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                        position: relative;
+                        top: -127px;
+                        border-radius: 0px;
+                    }
+                }
+                .disc{
+                    padding: 90px 80px 90px 100px;
+                    animation: slideInRight;
+                    animation-duration: 3s;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                        padding: 20px 26px;
+                    }
+                    h3{
+                        font-weight: 500;
+                        font-size: 52px;
+                        line-height: 69px;
+                        text-align: justify;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            font-size: 32px;
+                            line-height: 44px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                    p{
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 131%;
+                        opacity: 0.7;
+                        margin-bottom: 52px;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            font-style: normal;
+                            font-size: 14px;
+                            margin-bottom: 36px;
+                        }
+                    }
+                    .book{
+                        background: linear-gradient(90deg, #00FF85 0%, rgba(0, 255, 133, 0) 222.91%);
+                        border-radius: 2px;
+                        text-decoration: none;
+                        color: #FFF;
+                        padding: 10px 24px;
+                        font-size: 16px;
+                        transition: all 2s;
+                        border: linear-gradient(90deg, #00FF85 0%, rgba(0, 255, 133, 0) 222.91%);
+                        display: inline-block;
+                        position: relative;
+                        animation: bounceInRight;
+                        animation-duration: 4s;
+
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            padding: 10px 12px;
+                            font-size: 13px;
+                        }
+                        .line {
+                          background: #003827;
+                          position: absolute;
+                          transition: none;
+                          transform:scale(0);
+                          opacity:1;
+                          height:$line-size;
+                        }
+                        .line:nth-child(1){
+                          transform-origin: 100% 100%;
+                          width: 20%;
+                          bottom:0;
+                        }
+                        .line:nth-child(4){
+                          transform-origin: 0 100%;
+                          width: 20%;
+                          top:$distance;
+                          right:0;
+                        }
+                        .line:nth-child(2){
+                          transform-origin: 100% 100%;
+                          height:100%;
+                          bottom:0;
+                          left:$distance;
+                        }
+                        .line:nth-child(5){
+                          transform-origin: 100% 0;
+                          height:100%;
+                          bottom:0;
+                          right:$distance;
+                        }
+                        .line:nth-child(3){
+                          transform-origin: 0 100%;
+                          width: 100%;
+                          top:$distance;
+                          left:$distance;
+                        }
+                        .line:nth-child(6){
+                          transform-origin: 100% 0;
+                          width: 100%;
+                          bottom:0;
+                          right:$distance;
+                        }
+                        &:hover >.line{
+                          transform: scale(1);
+                          opacity:0;
+                          transition: all 1s;
+                        }
+                        &:hover >.line:nth-child(2),&:hover >.line:nth-child(5){
+                          transition-delay: $delay1;
+                        }
+                        &:hover >.line:nth-child(3),&:hover >.line:nth-child(6){
+                          transition-delay: $delay2;
+                        }
+                        svg{
+                            margin-left: 12px;
+                            @media (min-width: $width1) and (max-width: $width2) {
+                                margin-left: 9px;
+                                width: 16px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .try{
+                        @extend .book;
+                        padding: 9px 24px;
+                        background: unset;
+                        margin-left: 15px;
+                        border: 10px solid;
+                        border-image-slice: 1;
+                        border-width: 1px;
+                        animation: bounceInRight;
+                        animation-duration: 4.5s;
+                        border-image-source: linear-gradient(to right, #00FF85, #003827);
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            padding: 9px 12px;
+                            margin-left: 13px;
+                        }
+                        .line {
+                          background: #FFF;
+                          position: absolute;
+                          transition: none;
+                          transform:scale(0);
+                          opacity:1;
+                          height:1px;
+                          z-index: 999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

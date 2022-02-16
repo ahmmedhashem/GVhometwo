@@ -1,0 +1,21 @@
+@import "../../HomeThree/main-home-three/testimnail-three/testimnail-three.component.scss";
+@import "../../../styles.scss";
+
+.testimonails{
+  @media (min-width: $width1) and (max-width: $width2) {
+    position: relative;
+    top: -284px;
+  }
+    background-image: url("../../../assets/img/testimonailbg.png");
+    .container{
+        .heading{
+            h3{
+                color: #373737;
+            }
+            span{
+                color: #373737;
+            }
+        }
+    }
+}
+

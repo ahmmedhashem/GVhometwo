@@ -1,0 +1,80 @@
+@import "../../../../styles.scss";
+
+.slid-con{
+    background-image: url('../../../../assets/img/Rectangle\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 991px;
+    padding: 300px 0 120px 0;
+    overflow: hidden;
+    position: relative;
+    @media (min-width: $width1) and (max-width: $width2) {
+      background-size: cover;
+      padding: 118px 0 120px 0;
+    }
+    .shap{
+        position: absolute;
+        right: 0;
+        top: 0%;
+        width: 25%;
+        height: 1139px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+        overflow: hidden;
+        @media (min-width: $width1) and (max-width: $width2) {
+        display: none;
+        }
+    }
+    .discp{
+        padding-top: 80px;
+        padding-right: 120px;
+        @media (min-width: $width1) and (max-width: $width2) {
+          padding-right: 0;
+          padding: 010px;
+        }
+        h3{
+            font-weight: bold;
+            font-size: 62px;
+            line-height: 69px;
+            text-align: justify;
+            color: #100024;
+            margin-bottom: 50px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 36px;
+              margin-bottom: 25px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 131%;
+            text-align: justify;
+            color: #100024;
+            margin-bottom: 38px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 14px;
+              margin-bottom: 20px;
+            }
+        }
+    }
+    .padd-zero{
+      @media (min-width: $width1) and (max-width: $width2) {
+        padding: 0;
+      }
+    }
+    .img-cont{
+        width: 630px;
+        height: 630px;
+        background: url('../../../../assets/img/Ellipse\ 21.png'), #d4b767;
+        background-blend-mode: color-burn, normal;
+        border-radius: 50%;
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 363px;
+          height: 363px;
+          position: relative;
+          background-size: contain;
+          z-index: 1;
+          margin: 0 auto;
+        }
+    }
+}

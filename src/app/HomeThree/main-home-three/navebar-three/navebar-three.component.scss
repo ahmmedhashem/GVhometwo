@@ -1,0 +1,62 @@
+
+@import "../../../../styles.scss";
+@import "../../../Home/main/navbarHome/navbarHome.component.scss";
+
+.navbar{
+
+    .container-fluid{
+        position: relative;
+        .collapse{
+            ul{
+                padding: 0;
+                border-bottom: 1px solid #C8BBF3;;
+                li{
+                  @media (min-width: $width1) and (max-width: $width2) {
+                    border-bottom: 1px solid #8fedff;
+                   }
+                    a{
+                        color: #CC81F4;
+                        padding: 30px 0;
+                    }
+                    .active{
+                        border-bottom: 2px solid #5F52C8;
+                    }
+                }
+            }
+            form{
+                .signin{
+                    a{
+                        color: #5F52C8;
+                        text-transform: none;
+                    }
+                }
+                .signup{
+                    background: linear-gradient(262.11deg, rgba(222, 99, 242, 0.7) 18.55%, rgba(91, 38, 235, 0.7) 90.78%);
+                    a{
+                        text-transform: none;
+                    }
+                }
+                .dropdown{
+                    .dropdown-toggle{
+                        &::after{
+                            color: #FFF;
+                        }
+                    }
+                    .dropdown-menu{
+                        background-color: rgba($color: #000000, $alpha: .5);
+                        .dropdown-item{
+                            &:hover{
+                                background-color: rgba($color: #000000, $alpha: .6);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.show{
+    display: inline-block!important;
+}

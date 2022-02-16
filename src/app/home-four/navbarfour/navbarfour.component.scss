@@ -1,0 +1,37 @@
+@import "../../HomeThree/main-home-three/navebar-three/navebar-three.component.scss";
+
+.navbar{
+    .container-fluid{
+        position: relative;
+        .collapse{
+            ul{
+                border-bottom: 1px solid rgba(0, 246, 211, 0.5);;
+                li{
+                  @media (min-width: $width1) and (max-width: $width2) {
+                   border-bottom: 1px solid #00F6D3;
+                  }
+                    a{
+                        color: #4DF1D5;
+
+                    }
+                    .active{
+                        border-bottom: 2px solid #00F6D3;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                          border-bottom: none;
+                         }
+                    }
+                }
+            }
+            form{
+                .signin{
+                    a{
+                        color: #4DD3E4;
+                    }
+                }
+                .signup{
+                    background: linear-gradient(262.11deg, rgba(0, 208, 236, 0.7) 18.55%, rgba(0, 248, 212, 0.7) 90.78%);
+                }
+            }
+        }
+    }
+}

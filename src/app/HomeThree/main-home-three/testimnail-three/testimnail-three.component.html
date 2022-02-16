@@ -1,0 +1,40 @@
+<div class="testimonails">
+    <div class="container four">
+        <div class="heading text-center">
+            <h3>Testimonials</h3>
+            <span>What people are saying...</span>
+        </div>
+        <owl-carousel-o [options]="testimonialOptions">
+            <ng-template carouselSlide *ngFor="let testimonail of testimonails">
+                <div class="cont">
+                    <img src="{{testimonail.img}}" alt="client photo">
+                    <div class="caption">
+                        <h5>{{testimonail.name}}</h5>
+                        <p>{{testimonail.disc}}</p>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+        <div class="left-shap">
+            <svg width="47" height="94" viewBox="0 0 47 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 46.9999V93.2857H46.2858V46.9999H15.4287C15.4287 29.9856 29.2715 16.1428 46.2858 16.1428V0.714111C20.7623 0.714111 0 21.4764 0 46.9999Z" fill="white" fill-opacity="0.3"/>
+            </svg>
+            <svg width="47" height="94" viewBox="0 0 47 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 46.9999V93.2857H46.2858V46.9999H15.4287C15.4287 29.9856 29.2715 16.1428 46.2858 16.1428V0.714111C20.7623 0.714111 0 21.4764 0 46.9999Z" fill="white" fill-opacity="0.3"/>
+            </svg>
+        </div>
+        <div class="right-shap">
+            <svg width="47" height="94" viewBox="0 0 47 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47 47.0001L47 0.71431L0.71421 0.714314L0.714214 47.0001L31.5713 47.0001C31.5713 64.0144 17.7285 77.8572 0.714217 77.8572L0.714218 93.2859C26.2377 93.2859 47 72.5236 47 47.0001Z" fill="white" fill-opacity="0.3"/>
+            </svg>
+            <svg width="47" height="94" viewBox="0 0 47 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47 47.0001L47 0.71431L0.71421 0.714314L0.714214 47.0001L31.5713 47.0001C31.5713 64.0144 17.7285 77.8572 0.714217 77.8572L0.714218 93.2859C26.2377 93.2859 47 72.5236 47 47.0001Z" fill="white" fill-opacity="0.3"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+
+
+

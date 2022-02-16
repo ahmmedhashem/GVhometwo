@@ -1,0 +1,33 @@
+<div class="partner">
+    <div class="container">
+        <div class="header">
+            <div class="back wow">
+
+            </div>
+            <h3 class="wow">Partners</h3>
+        </div>
+        <div class="part-cont">
+            <div class="row cont-center">
+                <div class="col-md-3 partco wow" *ngFor="let partener of parteners">
+                    <div class="part">
+                        <img src="{{partener.img}}" alt="part1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mobile">
+        <!--slider for mobile screen-->
+        <owl-carousel-o [options]="partenerOptions">
+            <ng-template carouselSlide *ngFor="let partenerr of parteners">
+                <div class="cont">
+                    <img src="{{partenerr.img}}" alt="partener">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+
+
+  </div>
+</div>

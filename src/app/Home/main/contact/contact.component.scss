@@ -1,0 +1,103 @@
+@import "../../../../styles.scss";
+
+.contact{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 120px 0 100px 0;
+    @media (min-width: $width1) and (max-width: $width2) {
+      padding: 84px 20px 69px 20px;
+    }
+    img{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: -418px;
+        width: 156%;
+        height: 100%;
+        @media (min-width: $width1) and (max-width: $width2) {
+          left: -30%;
+        }
+    }
+    .shapethree{
+        width: 100%;
+        height: 100%;
+        background: #100024;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+    .shapefour{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -993px;
+        bottom: -630px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(248, 58, 205, 0.5) 0%, rgba(26, 25, 29, 0) 100%);
+    }
+    .contact-form{
+        width: 493px;
+        margin: 0 auto;
+        position: relative;
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: auto;
+        }
+        .form-group{
+            label{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(255, 255, 255, 0.15);
+                position: relative;
+                margin-bottom: 25px;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  font-size: 14px;
+                  margin-bottom: 0;
+                }
+                span{
+                    color: #F00;
+                }
+            }
+            input,select{
+                margin-bottom: 40px;
+                background-color: unset;
+                padding: 14px 0;
+                font-weight: 500;
+                font-size: 18px;
+                color: #C4C4C4;
+                border-radius: 0;
+                border: none;
+                border-bottom: 1px solid #C4C4C4;
+                @media (min-width: $width1) and (max-width: $width2) {
+                  margin-bottom: 16px;
+                }
+            }
+            option{
+                background-color: #F00;
+            }
+            ::placeholder{
+              @media (min-width: $width1) and (max-width: $width2) {
+                  font-size: 14px;
+                }
+            }
+        }
+        button{
+            background: linear-gradient(262.11deg, #8C5CEF 18.55%, #F83ACD 90.78%);
+            border-radius: 68px;
+            border: none;
+            padding: 16px 68px;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: right;
+            float: right;
+            margin-top: 30px;
+            @media (min-width: $width1) and (max-width: $width2) {
+              font-size: 14px;
+              padding: 11px 51px;
+              margin-top: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../../styles.scss";
+@import "../../../Home/main/footerHome/footerHome.component.scss";
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer{
+    background: linear-gradient(0deg, #730AEA, #730AEA), url('../../../../assets/img/Rectangle\ 285.png');
+    .news_letter{
+        background: rgba(255, 255, 255, 0.3);
+        @media (min-width: $width1) and (max-width: $width2) {
+          width: 89%;
+          margin: 0 auto;
+        }
+        .send_email{
+            button{
+                svg{
+                    path{
+                        fill: rgba(255, 255, 255, 0.8);
+                    }
+
+                }
+            }
+        }
+    }
+}

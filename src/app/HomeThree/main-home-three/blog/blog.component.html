@@ -1,0 +1,29 @@
+<div class="blog text-center">
+    <div class="container">
+        <div class="heading">
+            <h3>Featured Blogs Posts</h3>
+            <p>News and more...</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-cont">
+                    <img src="./assets/img/Rectangle 306.png" alt="blog background">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="slider-cont">
+                    <owl-carousel-o [options]="customOptions">   
+                        <ng-template carouselSlide *ngFor="let blog of blogs">  
+                            <div class="cont odd">
+                                <span>{{blog.new}}</span>
+                                <h3>{{blog.title}}</h3>
+                                <hr>
+                                <p>{{blog.disc}}</p>
+                            </div>
+                        </ng-template>  
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,266 @@
+@import "../../../../styles.scss";
+
+.categories{
+    position: relative;
+    padding: 50px 0 0;
+    overflow: hidden;
+    @media (min-width: $width1) and (max-width: $width2) {
+        overflow: scroll;
+    }
+    .header{
+        .back{
+            width: 65%;
+            height: 200px;
+            margin: 0 auto;
+            @media (min-width: $width1) and (max-width: $width2) {
+                width: 76%;
+                height: 84px;
+            }
+            h2{
+                text-shadow: -1px 0 rgba(20, 20, 20, 0.5), 0 1px rgba(20, 20, 20, 0.5), 1px 0 rgba(20, 20, 20, 0.5), 0 -1px rgba(20, 20, 20, 0.5);
+                font-weight: 500;
+                font-size: 130px;
+                animation: flipInY;
+                animation-duration: 3s;
+                @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 38px;
+                }
+            }
+        }
+        h3{
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 69px;
+            text-align: justify;
+            color: #000000;
+            position: absolute;
+            top: 116px;
+            left: 30%;
+            animation: bounceIn;
+            animation-duration: 5s;
+            transition: all 1s ease-in-out;
+            @media (min-width: $width1) and (max-width: $width2) {
+                top: 45px;
+                left: 31%;
+                font-size: 27px;
+            }
+        }
+    }
+    .cat-cont{
+        @media (min-width: $width1) and (max-width: $width2) {
+            width: 175%;
+            position: relative;
+            left: 12px;
+        }
+        .row{
+            .col-6{
+                height: 100%;
+                @media (min-width: $width1) and (max-width: $width2) {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .row{
+                @media (min-width: $width1) and (max-width: $width2) {
+                    margin: 0;
+                    padding: 0;
+                }
+                .full{
+                    height: $imgheight * 2;
+                    position: relative;
+                    animation: bounceIn;
+                    animation-duration: 3s;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                        width: 187%;
+                        height: 440px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    img{
+                        border-radius: 50px;
+                    }
+                    // &:hover{
+                    //     transform: scale(1.2,1.1);
+                    //     z-index: 9;
+                    //     transition: transform 1s ease-in-out;
+                    // }
+                    &:hover h3{
+                        opacity: 1;
+                        left: 60px;
+                        transition: all 2s ease-in-out;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            left: 30px;
+                        }
+                    }
+                    &:hover .cover{
+                        opacity: 0;
+                        transition: opacity 2s ease-in-out;
+                    }
+                    .cover{
+                        position: absolute;
+                        left: 12px;
+                        top: 0;
+                        width: 94.8%;
+                        height: 100%;
+                        background: rgba(0, 248, 129, 0.8);
+                        mix-blend-mode: multiply;
+                        border-radius: 50px;
+                        margin: 0;
+                        padding: 0;
+                        border-radius: 52px;
+                        overflow: hidden;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            width: 100%;
+                            left: 0;
+                         }
+                    }
+                }
+                .half{
+                    height: 50%;
+                    @media (min-width: $width1) and (max-width: $width2) {
+                        width: 100%;
+                        height: 220px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .hold{
+                        height: $imgheight;
+                        position: relative;
+                        animation: bounceIn;
+                        animation-duration: 3s;
+                        @media (min-width: $width1) and (max-width: $width2) {
+                            height: 219.5px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        // &:hover{
+                        //     transform: scale(1.2,1.1);
+                        //     z-index: 9;
+                        //     transition: transform 1s ease-in-out;
+                        // }
+                        &:hover h3{
+                            opacity: 1;
+                            left: 60px;
+                            transition: all 2s ease-in-out;
+                            @media (min-width: $width1) and (max-width: $width2) {
+                                left: 30px;
+                            }
+                        }
+                        &:hover .cover{
+                           opacity: 0;
+                           transition: opacity 2s ease-in-out;
+                        }
+                        img{
+                            border-radius: 50px;
+                        }
+                        h3{
+                            font-weight: 500;
+                            font-size: 34px;
+                            line-height: 107.19%;
+                            text-align: justify;
+                            position: absolute;
+                            bottom: 90px;
+                            left: 0px;
+                            opacity: 0;
+                            @media (min-width: $width1) and (max-width: $width2) {
+                             font-size: 24px;
+                             bottom: 44px;
+                            }
+                        }
+                        .cover{
+                            position: absolute;
+                            left: 12px;
+                            top: 0;
+                            width: 94.8%;
+                            height: 100%;
+                            background: rgba(0, 248, 129, 0.8);
+                            mix-blend-mode: multiply;
+                            border-radius: 50px;
+                            margin: 0;
+                            padding: 0;
+                            border-radius: 52px;
+                            overflow: hidden;
+                            @media (min-width: $width1) and (max-width: $width2) {
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
+                    }
+                    // .hold-left{
+                    //     &:hover{
+                    //         margin-left: -50px;
+                    //         transition: all 2s ease-in-out;
+                    //         @media (min-width: $width1) and (max-width: $width2) {
+                    //             margin-left: -17px;
+                    //         }
+                    //     }
+                    // }
+                    // .hold-right{
+                    //     &:hover{
+                    //         margin-left: 50px;
+                    //         transition: all 2s ease-in-out;
+                    //         @media (min-width: $width1) and (max-width: $width2) {
+                    //             margin-left: 17px;
+                    //         }
+                    //     }
+                    // }
+                }
+                .col-6{
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
+        .hold{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            // &:hover{
+            //     transform: scale(1.2),1.1;
+            //     z-index: 9;
+            //     transition: all 1s ease-in-out;
+            // }
+            &:hover h3{
+                opacity: 1;
+                left: 60px;
+                transition: all 2s ease-in-out;
+                @media (min-width: $width1) and (max-width: $width2) {
+                    left: 30px;
+                }
+            }
+            &:hover .cover{
+                opacity: 0;
+                transition: opacity 2s ease-in-out;
+            }
+            h3{
+                font-weight: 500;
+                font-size: 34px;
+                line-height: 107.19%;
+                text-align: justify;
+                position: absolute;
+                bottom: 90px;
+                left: 0px;
+                opacity: 0;
+                @media (min-width: $width1) and (max-width: $width2) {
+                    font-size: 24px;
+                    bottom: 44px;
+                }
+            }
+            .cover{
+                position: absolute;
+                left: 12px;
+                top: 0;
+                width: 94.8%;
+                height: 100%;
+                background: rgba(0, 248, 129, 0.8);
+                mix-blend-mode: multiply;
+                border-radius: 50px;
+                margin: 0;
+                padding: 0;
+                border-radius: 52px;
+                overflow: hidden;
+            }
+        }
+    }
+}

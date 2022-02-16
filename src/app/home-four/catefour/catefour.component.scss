@@ -1,0 +1,23 @@
+@import "../../HomeThree/main-home-three/cate-three/cate-three.component.scss";
+
+.category{
+  position: relative;
+  @media (min-width: $width1) and (max-width: $width2) {
+   overflow: unset;
+   }
+  .contain{
+    @media (min-width: $width1) and (max-width: $width2) {
+      position: relative;
+      top: -366px;
+      left: 0;
+     }
+     .col-md-2{
+
+      .img-cont{
+          .cover{
+              background: #00F6D3;
+          }
+      }
+    }
+  }
+}

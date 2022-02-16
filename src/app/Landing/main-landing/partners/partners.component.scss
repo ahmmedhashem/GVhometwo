@@ -1,0 +1,88 @@
+@import "../../../../styles.scss";
+
+
+.partner{
+    position: relative;
+    padding: 100px 125px;
+    @media (min-width: $width1) and (max-width: $width2) {
+        padding: 60px 18px;
+    }
+    .header{
+        /* z-index: 9999; */
+        position: absolute;
+        left: 37%;
+        top: -150px;
+        @media (min-width: $width1) and (max-width: $width2) {
+            left: 14%;
+            top: -110px;
+        }
+        .back{
+            background-image: url('../../../../assets/img/Partners.png');
+            background-repeat: no-repeat;
+            width: 450px;
+            background-size: contain;
+            height: 150px;
+            animation: flipInY;
+            animation-duration: 3s;
+            @media (min-width: $width1) and (max-width: $width2) {
+                width: 280px;
+                height: 150px;
+            }
+        }
+        h3{
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 69px;
+            text-align: justify;
+            position: absolute;
+            top: 20%;
+            left: 14%;
+            animation: bounceIn;
+            animation-duration: 5s;
+            transition: all 1s ease-in-out;
+            @media (min-width: $width1) and (max-width: $width2) {
+                font-size: 39px;
+                top: 4%;
+                left: 26%;
+            }
+        }
+    }
+    .part-cont{
+        padding: 0 100px;
+        overflow: hidden;
+        @media (min-width: $width1) and (max-width: $width2) {
+            display: none;
+         }
+        .cont-center{
+            justify-content: center;
+            // @for $i from 1 through 10 {
+            //   .partco:nth-child(#{$i}) {
+            //       animation-duration: $i/3 + s;
+            //   }
+            // }
+            .partco{
+              animation: bounceInLeft;
+              animation-duration: 3s;
+              transition: all 1s ease-in-out;
+              .part{
+                width: 100%;
+                height: 69px;
+                margin: 30px auto;
+                padding: 0 28px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+            }
+        }
+    }
+    .mobile{
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+           display: block;
+        }
+    }
+
+
+}

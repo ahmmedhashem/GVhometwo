@@ -1,0 +1,15 @@
+<div class="category">
+    <div class="contain">
+      <owl-carousel-o [options]="catOptions">
+        <ng-template carouselSlide *ngFor="let cat of categories">
+            <div class="cont odd">
+                <div class="cover"></div>
+                <img src="{{cat.img}}" alt="category">
+                <h3>{{cat.title}}</h3>
+                <hr>
+            </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+
+</div>

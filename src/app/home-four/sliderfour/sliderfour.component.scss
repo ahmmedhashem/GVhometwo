@@ -1,0 +1,37 @@
+@import "../../HomeThree/main-home-three/slider-three/slider-three.component.scss";
+
+.slid-con{
+    .shaptwo{
+        background: url('../../../assets/img/bg33.png');
+    }
+    .shap{
+        background: url('../../../assets/img/bg99.png');
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: block;
+         }
+
+    }
+    .shapthree{
+        position: absolute;
+        width: 80%;
+        height: 120%;
+        right: -185px;
+        top: 0px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 246, 211, 0.5) 0%, rgba(0, 246, 211, 0) 100%);
+    }
+    .discp{
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #00F6D3;
+        }
+        a{
+            border: 1px solid #00F6D3;
+            color: #FFF;
+            svg{
+                color: #FFF;
+            }
+        }
+    }
+}

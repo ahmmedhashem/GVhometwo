@@ -1,0 +1,70 @@
+@import "../../HomeThree/main-home-three/footer-three/footer-three.component.scss";
+
+::placeholder{
+    color: rgba(55, 55, 55, 0.5);
+}
+
+.footer{
+    background: linear-gradient(0deg, #00F6D3, #00F6D3), url('../../../assets/img/footerfourbg.png');
+    .content{
+      img{
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) {
+          display: inline-block;
+          width: 79px;
+          height: 78.62px;
+        }
+      }
+        h3{
+            color: #373737;
+        }
+        ul{
+            li{
+                color: #373737;
+                a{
+                    color: #373737;
+                }
+            }
+        }
+    }
+    .news_letter{
+        background: rgba(255, 255, 255, 0.3);
+        @media (min-width: $width1) and (max-width: $width2) {
+          background: unset;
+        }
+        .send_email{
+            input{
+                border-bottom: 1px solid #373737;
+            }
+            button{
+                svg{
+                    path{
+                        fill: rgba(55, 55, 55, 0.8);
+                    }
+
+                }
+            }
+        }
+        h3,p{
+            color: #373737;
+        }
+        .shape{
+          @media (min-width: $width1) and (max-width: $width2) {
+            top: 15px;
+          }
+        }
+        p{
+          @media (min-width: $width1) and (max-width: $width2) {
+            margin-left: 24px;
+          }
+        }
+    }
+    .copyright{
+      display: none;
+      @media (min-width: $width1) and (max-width: $width2) {
+        display: block;
+        background-color: #373737;
+      }
+
+    }
+}
