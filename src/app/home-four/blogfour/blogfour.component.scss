@@ -2,9 +2,7 @@
 @import "../../../styles.scss";
 
 .blog{
-  @media (min-width: $width1) and (max-width: $width2) {
-    margin-top: -285px;
-   }
+
     .heading{
         margin-bottom: 50px;
         @media (min-width: $width1) and (max-width: $width2) {

@@ -45,7 +45,7 @@ export class CateThreeComponent implements OnInit {
     navText: ['',''],
     responsive: {
       0: {
-        items: 1
+        items: 1.3
       },
       400: {
         items: 2

@@ -3,9 +3,13 @@
 .blog{
     padding: 100px 0 120px 0;
     background: #F5F5F7;
-    @media (min-width: $width1) and (max-width: $width2) {
+    @media (min-width: 380px) and (max-width: $width2) {
       padding: 31px 0 0px 0;
       margin-top: -285px;
+    }
+    @media (min-width: 0px) and (max-width: 380px) {
+      margin-top: -568px;
+      padding: 31px 0 0px 0;
     }
     .heading{
         margin-bottom: 50px;
